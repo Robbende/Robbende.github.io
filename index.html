@@ -1,76 +1,52 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <meta charset="utf-8"/>
-        <title></title>
-        <link href=".\css\main.css" rel="stylesheet" />
-        <script type="text/javascript" src="js/main.js"></script>
+<html lang="en">
+<head>
+  <title>America Beauty Bar - Salon</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    html, body { height: 100%; }
+    #coupon-iframe-div{
+        display: contents;
+    }
+  </style>
 
-        <style>
-            /* css code here */
-            html,
-            body {
-                margin:0;
-                padding:0;
-                height:100%;
-                font-family: Arial, Helvetica, sans-serif;
-                background-color: lightgray;
-            }
-            #container {
-                min-height:100%;
-                position:relative;
-                background-color: white;
-                margin: 20px;
-            }
-            #header {
-            
-                padding:10px;
-            }
-            #body {
-                padding:10px;
-                padding-bottom:60px;   /* Height of the footer */
-            }
-            #footer {
-                position:absolute;
-                bottom:0;
-                width:100%;
-                height:60px;   /* Height of the footer */
-                padding: 10px;
-           
-            }
-
-
-        </style>
-
-        <script>
-            /* javascript code here */
-        </script>
+    <script>
+        /* javascript code here */
+    </script>
 
     </head>
     <body>
         
+        <div id="coupon-iframe-div"></div>
+
+    <script>
+    window.onload = function(){
+        var loc = window.location.toString();
+        params = loc.split('?')[1];
+        //iframe = document.getElementById('coupon-iframe');
+        //iframe.src = iframe.src + '?' + params;​​​​​​​​​​​​​​​​
+
+
+        var iframeDiv = document.getElementById("coupon-iframe-div");
+
+            // create iframe
+            var iframe = document.createElement("iframe");
+            // Add attributes
+            iframe.src = "https://script.google.com/a/~/macros/s/AKfycbzarpSUxoJ3BY-YWG7vqJwChGfgnKx14REblIdNymEH_7GYrrZkhosmufxPQTAJ0UrMDg/exec" + "?" + params;
+            // Set size and hide iframe border
+            iframe.width = "100%";
+            iframe.height = "100%";
+            iframe.frameBorder ="0";
+            iframe.scrolling = "0";
+            iframe.style.border= "none";
+
+        iframeDiv.appendChild(iframe);
+
+        console.log("iframe src " + iframe.src);
+    }
+    </script>
         
-        <div id="container">
-            <div id="header"></div>
-            <div id="body">
-               <h2> Tecmilenio - Fase 1 - Watson Assistant </h2>
-            </div>
-            <div id="footer"></div>
-         </div>
-    
-         <script>
-            window.watsonAssistantChatOptions = {
-              integrationID: "60b562f8-779b-43f4-82b1-fa7962f2f6bb", // The ID of this integration.
-              region: "us-south", // The region your integration is hosted in.
-              serviceInstanceID: "17957a32-69a4-4687-9664-18fd3c29a696", // The ID of your service instance.
-              onLoad: function(instance) { instance.render(); }
-            };
-            setTimeout(function(){
-              const t=document.createElement('script');
-              t.src="https://web-chat.global.assistant.watson.appdomain.cloud/versions/" + (window.watsonAssistantChatOptions.clientVersion || 'latest') + "/WatsonAssistantChatEntry.js";
-              document.head.appendChild(t);
-            });
-          </script>
 
     </body>
 
