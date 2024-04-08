@@ -163,7 +163,8 @@ html, body { height: 100%; }
         min-width: 300px;
         padding: 10px;
         min-height: 100px;
-        background-size:600px;
+        /*background-size:600px;*/
+        background-size: cover;
         
     }
 
