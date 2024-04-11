@@ -225,11 +225,11 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script> All r
         params = loc.split('?')[1];
 
         const urlParams = new URLSearchParams(window.location.search);
-        var card_id_param = urlParams.get("card_id");
+        var card_id_param = urlParams.get("code");
 
         if (card_id_param == null || card_id_param == ""){
             //TODO: display error
-            showError('card_id parameter can not be null');
+            showError('code parameter can not be null');
             hideSpinner()
             return;
         }
