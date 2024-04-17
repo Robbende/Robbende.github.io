@@ -1,24 +1,93 @@
 var portfolio_data = {
     nails: [
         {
-            name: 'uñas_1',
+            name: 'nails_2',
             url: 'images/portfolio/unas_2.jpeg',
             show: true
         },
         {
-            name: 'uñas_1',
+            name: 'nails_1',
             url: 'images/portfolio/unas_1.jpeg',
-            show: true
+            show: false
         },
-        
         {
-            name: 'uñas_1',
+            name: 'nails_3',
             url: 'images/portfolio/unas_3.jpeg',
             show: true
         },
         {
-            name: 'uñas_1',
+            name: 'nails_4',
             url: 'images/portfolio/unas_4.jpeg',
+            show: true
+        },
+        {
+            name: 'nails_6',
+            url: 'images/portfolio/nails_6.jpeg',
+            show: true
+        },
+        {
+            name: 'nails_7',
+            url: 'images/portfolio/nails_7.jpeg',
+            show: true
+        },
+        {
+            name: 'nails_8',
+            url: 'images/portfolio/nails_8.jpeg',
+            show: true
+        },
+        {
+            name: 'nails_9',
+            url: 'images/portfolio/nails_9.jpeg',
+            show: true
+        },
+        {
+            name: 'nails_10',
+            url: 'images/portfolio/nails_10.jpeg',
+            show: true
+        },
+        {
+            name: 'nails_12',
+            url: 'images/portfolio/nails_12.jpeg',
+            show: true
+        },
+        {
+            name: 'nails_13',
+            url: 'images/portfolio/nails_13.jpeg',
+            show: true
+        },
+        {
+            name: 'nails_14',
+            url: 'images/portfolio/nails_14.jpeg',
+            show: true
+        },
+        {
+            name: 'nails_15',
+            url: 'images/portfolio/nails_15.jpeg',
+            show: true
+        },
+        {
+            name: 'nails_16',
+            url: 'images/portfolio/nails_16.jpeg',
+            show: true
+        },
+        {
+            name: 'nails_17',
+            url: 'images/portfolio/nails_17.jpeg',
+            show: true
+        },
+        {
+            name: 'nails_18',
+            url: 'images/portfolio/nails_18.jpeg',
+            show: true
+        },
+        {
+            name: 'pedicure_1',
+            url: 'images/portfolio/pedicure_1.jpeg',
+            show: true
+        },
+        {
+            name: 'pedicure_2',
+            url: 'images/portfolio/pedicure_2.jpeg',
             show: true
         },
     ],
